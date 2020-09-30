@@ -1,0 +1,141 @@
+.wrapper{
+  display: flex;
+}
+
+.sidebar{
+  width: 300px;
+  height: 100vh;
+  background-color: #253141;
+}
+
+.sideup{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name a{
+  font-size:16px;
+  color:#fafafa;
+  text-decoration: none;
+}
+.chatbotton{
+  font-size: 10px;
+}
+.chatbotton a{
+  border: 1px solid lightblue;
+  padding:14px;
+  color: skyblue;
+  text-decoration: none;
+}
+
+.sidemain{
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+.chat{
+  padding:20px 0 40px;
+}
+.chatname a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.mainchat{
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+}
+
+.mainup{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content:space-between ;
+}
+.group{
+  font-size: 24px;
+  color: #333;
+  margin-top:36px;
+}
+.endbotton{
+  margin-top: 40px;
+}
+.endbotton a{
+  color: darkred;
+  padding: 20px;
+  border: 1px darkred solid;
+  text-decoration: none;
+}
+
+.mainmain{
+  background-color: #fafafa;
+  height: calc(100vh - 100px - 90px);
+  padding:46px 40px 0 40px;
+  overflow: scroll;
+}
+.all_m{
+  margin:10px 0;
+}
+.upchat{
+  display: flex;
+}
+.muser{
+  color: #434a54;
+  font-size: 16px;
+}
+.mtime{
+  color: #999999;
+  font-size: 12px;
+  padding-left:10px;
+}
+.downchat{
+  margin-top: 10px;
+}
+.mchat{
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.maindown{
+  background-color: #dddddd;
+  height: 90px;
+  padding:20px 40px;
+  display: flex;
+}
+.form{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+.inputform{
+  border:none;
+  height: 50px;
+  width: 100%;
+  padding-left:10px;
+}
+.imageform{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding:12px;
+  width: 60px;
+  margin:5px 10px;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+.submitform{
+  background-color: #38aef0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding:0 20px;
+}
