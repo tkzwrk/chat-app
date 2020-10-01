@@ -1,0 +1,21 @@
+<div class="all_m">
+  <div class="upchat">
+    <div class="muser">
+    <!-- 投稿したユーザー名情報を出力する -->
+    <%= message.user.name%>
+
+    </div>
+    <div class="mtime">
+    <!-- 投稿した時刻を出力する -->
+    <%= message.created_at%>
+
+    </div>
+  </div>
+  <div class="downchat">
+    <div class="mchat">
+    <!-- 投稿したメッセージ内容を記述する -->
+    <%= message.content%>
+
+    </div>
+  </div>
+</div>
