@@ -1,6 +1,6 @@
    <div class = "sideup">
    <div class = "name">
-    <a href="#">tom</a>
+    <%= link_to current_user.name, edit_user_path(current_user)%>
    </div>
    <div class = "chatbotton">
     <a href="#">チャットを作成する</a>
