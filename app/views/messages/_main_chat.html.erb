@@ -1,18 +1,19 @@
    <div class = "mainup">
     <div class="groupall">
      <div class="group">
-      ふがふが
+      <%= @room.name %>
      </div>
     </div>
     <div class="endall">
       <div class="endbotton">
-       <a href="#">チャットを終了する</a>
+       <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
       </div>
      </div>
    </div>
 
 <div class = "mainmain">
-   <div class="all_m">
+<%= render partial: 'message', collection: @messages %>
+   <%# <div class="all_m">
     <div class="upchat">
       <div class="muser">
         Tom
@@ -42,10 +43,10 @@
         おは
       </div>
     </div>
-  </div>
+  </div> %>
 </div>
 
-<div class = "maindown">
+<%# <div class = "maindown">
  <div class="form">
  <input class="inputform" placeholder="type a message">
   <label class="imageform">
@@ -54,4 +55,16 @@
   </label>
  </div>
  <input class="submitform" type="submit" value="送信">
-</div>
+</div> %>
+
+
+<%= form_with model: [@room, @message], html: {class: "maindown"}, local: true do |f| %>
+  <div class="form">
+    <%= f.text_field :content, class: 'inputform', placeholder: 'type a message' %>
+    <label class="imageform">
+      <span class="imagefile">画像</span>
+      <%= f.file_field :image, class: 'hidden' %>
+    </label>
+  </div>
+  <%= f.submit '送信', class: 'submitform' %>
+<% end %>
